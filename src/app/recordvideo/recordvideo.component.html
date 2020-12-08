@@ -1,0 +1,71 @@
+<div class="row" style="margin-top: 90px;">
+   
+    <div class="col-md-12 text-center" style="min-width: 100%;min-height: 70%;">
+        <!--   -->
+        <div class="snapshot box">
+           
+            <div (window:resize)="onResize1($event)">
+                <video id="preview" autoplay muted="muted"></video>
+              
+                <div *ngIf="recordingsymbol" style="
+                    position: absolute;
+                    z-index: 1;
+                    float: right;
+                    margin-left: 60%;
+                    margin-top: -40px;
+                    color: red;
+                    font-weight: bolder;
+                ">
+                    <span style="
+                  margin-top: 2px;
+                  position: absolute;
+              ">REC &nbsp; </span>
+                    <mat-icon id="recordingsymbol" class="material-icons color_red md-36"
+                        style="margin-left: 30px;">
+                        videocam</mat-icon>
+                </div>
+               
+                <div *ngIf="recordingsymbol" class="col-md-12">
+                    <label class="fontsize"
+                        style="color: black;font-weight: bolder;">{{RecordingMessage}}</label>
+                </div>
+
+                
+                <div class="right">
+                    <video id="recording" style="display: none;width: 55%;margin: auto;" controls
+                        muted="muted"></video>
+                </div>
+               
+
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+<div class="row" style="margin-bottom: 10px;">
+    <div class="col-md-12 text-center">
+       
+        <button 
+            style="background-color: rgb(218, 216, 216);border-radius: 5px;color: black;font-weight: bolder;margin-top: 10px;"
+            (click)="recordVideo5Second()" 
+            *ngIf="recordintroductioncompleteHideButton">Start
+            Recording
+        </button>
+       
+         <button  style="background-color: #a81d22;border-radius: 5px;"
+            (click)="RetakeVideo()" *ngIf="recordvideocomplete">Re-Record
+        </button>
+
+        <button style="background-color: #a81d22;border-radius: 5px;margin-left: 5px;"
+            (click)="VerifyVideo()" *ngIf="recordvideocomplete">Continue
+        </button> 
+
+        <button id="Download"
+            style="background-color: #a81d22;border-radius: 5px;display: none;">
+            <a id="downloadButton"> Download</a>
+        </button>
+    </div>
+    
+
+</div>

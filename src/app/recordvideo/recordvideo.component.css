@@ -1,0 +1,318 @@
+.video {
+	box-shadow: 1px 6px 10px 2px rgba(35, 35, 35, 0.62);
+	height: 600px;
+	max-height: 800px;
+	width: 1067px;
+}
+
+/* .row {
+    margin-bottom: 20px;
+} */
+
+button {
+	background-color: #4caf50;
+	color: #ffffff;
+	border: none;
+	/* padding: 10px 20px; */
+	padding: 5px 10px;
+	/* font-size: 17px; */
+	font-size: 13px;
+	font-family: Raleway;
+	cursor: pointer;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+.faceclass {
+	position: absolute;
+	z-index: 999;
+	top: 61px;
+}
+
+/* video {
+    width: 100% !important;
+  } */
+
+@media only screen and (max-width: 600px) {
+	#preview {
+		height: auto !important;
+		/* margin-left: 15% !important; */
+		width: 70% !important;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+	#preview {
+		height: auto !important;
+		/* width: 1px !important; */
+		width: 50% !important;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	#preview {
+		height: auto !important;
+		/* width: 1px !important; */
+		width: 50% !important;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	#preview {
+		height: auto !important;
+		/* width: 1px !important; */
+		width: 50% !important;
+	}
+}
+
+.box {
+	position: relative;
+	display: inline-block;
+	/* Make the width of box same as image */
+}
+
+.box .text {
+	position: absolute;
+	z-index: 999;
+	color: red;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 63%;
+	text-align: right;
+	width: 68%;
+	/* Set the width of the positioned div */
+}
+
+input.invalid {
+	background-color: #ffdddd;
+}
+
+.red {
+	color: red !important;
+}
+.green {
+	color: green !important;
+}
+
+.nextbuttn {
+	background-color: #4caf50;
+	color: #ffffff;
+	border: none;
+	padding: 5px 10px;
+	font-size: 13px;
+	font-family: Raleway;
+	cursor: pointer;
+}
+
+/* Style */
+.scrollbar {
+	/* height: 50vh; */
+	height: 55vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	margin-right: -15px;
+}
+@media only screen and (min-width: 600px) {
+	.scrollbar {
+		/* height: 50vh; */
+		height: 55vh;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		margin-right: -8px;
+	}
+}
+.force-overflow {
+	min-height: 450px;
+}
+
+#wrapper {
+	text-align: center;
+	width: 500px;
+	margin: auto;
+}
+
+/*
+ *  STYLE 4
+ */
+
+#style-4::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(185, 185, 185, 0.3);
+	background-color: #f5f5f5;
+}
+
+#style-4::-webkit-scrollbar {
+	width: 10px;
+	background-color: #f5f5f5;
+}
+
+#style-4::-webkit-scrollbar-thumb {
+	background-color: #000000;
+	border: 2px solid #555555;
+}
+
+/* Style */
+
+.table-bordered td,
+.table-bordered th {
+	border: 2px solid #ffffff !important;
+}
+
+.tablerow {
+	font-size: small;
+}
+
+@media all and (min-device-width: 320px) {
+	.tablerow {
+		font-size: x-small;
+	}
+}
+
+@media all and (min-device-width: 360px) {
+	.tablerow {
+		font-size: small;
+	}
+}
+
+/* fontsize */
+.fontsize {
+	font-size: medium;
+}
+
+/* start 21/10/2020 reshma */
+.contain {
+	/* display: block; */
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.contain input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 15px;
+	width: 15px;
+	/* background-color: #eee; */
+}
+
+/* On mouse-over, add a grey background color */
+.contain:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.contain input:checked ~ .checkmark {
+	background-color: #a81d22;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.contain input:checked ~ .checkmark:after {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+.contain .checkmark:after {
+	left: 4px;
+	top: 1px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+/* end 21/10/2020 reshma */
+
+.multi-image {
+	margin: 5px 5px;
+	/* padding: 5px 0px; */
+}
+
+.multi-image .col-md-2 img {
+	border: 2px solid #c32a24;
+}
+
+.multi-image .col-md-2 {
+	width: 12% !important;
+}
+
+.multi-image .col-md-2 img {
+	border: 2px solid #c32a24;
+}
+
+.multi-image {
+	display: inline-block !important;
+}
+.multi-image .col-md-2 {
+	width: 12% !important;
+	padding: 0px !important;
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	padding: 0px;
+}
+.container .btn {
+	position: absolute;
+	/* top: 10%; */
+	left: 92%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	/* color: white;
+	font-size: 16px;
+	padding: 12px 24px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	text-align: center; */
+}
+
+/* .container .btn:hover {
+	background-color: black;
+  } */
+
+.overlayText {
+	position: absolute;
+	top: 30%;
+	left: 20%;
+	z-index: 1;
+}
+
+.topText {
+	color: white;
+	font-size: 20px;
+	align-self: center;
+}
+
